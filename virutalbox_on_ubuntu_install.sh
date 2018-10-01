@@ -1,14 +1,22 @@
 apt-get update
-apt-get install apache -y
+apt-get install apache2 -y
 apt-get install php -y
 apt-get install php-xml -y
 apt-get install php-soap -y
 apt-get install bsdtar -y
+apt-get install gdebi -y
+apt-get install -y gcc make perl
+apt-get install -y libapache2-mod-php
 
-apt-get install virtualbox -y
+curl -O https://download.virtualbox.org/virtualbox/5.2.2/virtualbox-5.2_5.2.2-119230~Ubuntu~xenial_amd64.deb
+echo y | gdebi *.deb
+rm -rf *.deb
+
 curl -O https://download.virtualbox.org/virtualbox/5.2.10/Oracle_VM_VirtualBox_Extension_Pack-5.2.10.vbox-extpack
 echo y | VBoxManage extpack install --replace Oracle_VM_VirtualBox_Extension_Pack-5.2.10.vbox-extpack
 rm -f Oracle_VM_VirtualBox_Extension_Pack-5.2.10.vbox-extpack
+
+VBoxManage setproperty websrvauthlibrary null
 
 useradd -d /home/vbox -m -g vboxusers -s /bin/bash vbox
 echo -e "pass\pass" | passwd vbox
