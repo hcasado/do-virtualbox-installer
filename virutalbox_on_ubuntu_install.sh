@@ -13,11 +13,11 @@ rm -f Oracle_VM_VirtualBox_Extension_Pack-5.2.10.vbox-extpack
 useradd -d /home/vbox -m -g vboxusers -s /bin/bash vbox
 echo -e "pass\pass" | passwd vbox
 
-touch /etc/init.d/vboxweb
-echo "#!/bin/bash" > /etc/init.d/vboxweb
-echo "sudo -u vbox  vboxwebsrv &" >> /etc/init.d/vboxweb
-chmod +x /etc/init.d/vboxweb
-update-rc.d vboxweb defaults
+#touch /etc/init.d/vboxweb
+#echo "#!/bin/bash" > /etc/init.d/vboxweb
+#echo "sudo -H -u vbox  vboxwebsrv &" >> /etc/init.d/vboxweb
+#chmod +x /etc/init.d/vboxweb
+#update-rc.d vboxweb defaults
 
 wget http://sourceforge.net/projects/phpvirtualbox/files/latest/download -O phpvirtualbox.zip
 bsdtar -xf phpvirtualbox.zip -s'|[^/]*/||' -C /var/www/html
