@@ -35,3 +35,8 @@ bsdtar -xf phpvirtualbox.zip -s'|[^/]*/||' -C /var/www/html
 rm -rf phpvirtualbox.zip
 mv /var/www/html/config.php-example /var/www/html/config.php
 
+service apache2 restart
+
+
+
+
