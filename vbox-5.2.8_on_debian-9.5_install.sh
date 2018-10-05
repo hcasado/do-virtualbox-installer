@@ -11,13 +11,15 @@ apt-get install -y curl
 apt-get install -y linux-headers-amd64
 apt-get install -y linux-headers-4.9.0-7-amd64
 
-curl -O https://download.virtualbox.org/virtualbox/5.2.6/virtualbox-5.2_5.2.6-120293~Debian~stretch_amd64.deb
+curl -O https://download.virtualbox.org/virtualbox/5.2.8/virtualbox-5.2_5.2.8-121009~Debian~stretch_amd64.deb
 echo y | gdebi *.deb
 rm -rf *.deb
 
-curl -O https://download.virtualbox.org/virtualbox/5.2.6/Oracle_VM_VirtualBox_Extension_Pack-5.2.6.vbox-extpack
-echo y | VBoxManage extpack install --replace Oracle_VM_VirtualBox_Extension_Pack-5.2.6.vbox-extpack
+curl -O https://download.virtualbox.org/virtualbox/5.2.8/Oracle_VM_VirtualBox_Extension_Pack-5.2.8.vbox-extpack
+echo y | VBoxManage extpack install --replace Oracle_VM_VirtualBox_Extension_Pack-5.2.8.vbox-extpack
 rm -f *.vbox-extpack
+
+curl -O https://download.virtualbox.org/virtualbox/5.2.8/VBoxGuestAdditions_5.2.8.iso
 
 VBoxManage setproperty websrvauthlibrary null
 
