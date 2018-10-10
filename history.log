@@ -1,0 +1,209 @@
+    1  apt-get update
+    2  apt-get install git
+    3  ls -l
+    4  git clone git@github.com:hcasado/do-virtualbox-installer.git
+    5  ssh-keygen
+    6  cat .ssh/id_rsa.pub 
+    7  git clone git@github.com:hcasado/do-virtualbox-installer.git
+    8  cd do-virtualbox-installer/
+    9  ls -l
+   10  df- h
+   11  df -h
+   12  mount
+   13  df -h
+   14  mkdir -p /mnt/volume_nyc1_01; mount -o discard,defaults /dev/disk/by-id/scsi-0DO_Volume_volume-nyc1-01 /mnt/volume_nyc1_01; echo /dev/disk/by-id/scsi-0DO_Volume_volume-nyc1-01 /mnt/volume_nyc1_01 ext4 defaults,nofail,discard 0 0 | sudo tee -a /etc/fstab
+   15  df -h
+   16  cd /mnt/volume_nyc1_01/
+   17  ls -l
+   18  cd s90/
+   19  ls
+   20  cd vms/
+   21  ls
+   22  ls -l
+   23  cd S90_ECM_W7_NEWX_AP_DEV/
+   24  ls -l
+   25  cd ..
+   26  ls
+   27  ls -l
+   28  cd ..
+   29  mv vms/W7_LITE/ .
+   30  ls -l
+   31  cd
+   32  cd
+   33  vi get.sh
+   34  vi get.sh 
+   35  chmod 777 get.sh 
+   36  ls -l
+   37  cat get.sh 
+   38  ./get.sh 
+   39  mkdir vms
+   40  ./get.sh 
+   41  ls -l
+   42  cat get.sh 
+   43  vi get.sh 
+   44  ./get.sh 
+   45  vi get.sh 
+   46  ls -l
+   47  ./get.sh 
+   48  git status
+   49  ls -l
+   50  nohup ./get.sh&
+   51  ls -l
+   52  cat nohup.out 
+   53  exit
+   54  df -h
+   55  cd /mnt/volume_nyc1_01/
+   56  cd vms
+   57  ls
+   58  cd s90/vms/
+   59  ls
+   60  ls -l
+   61  du .
+   62  du -h .
+   63  df -h
+   64  cd
+   65  ls -l
+   66  cd do-virtualbox-installer/
+   67  ls
+   68  atop
+   69  apt-get install atop
+   70  atop
+   71  ls -l
+   72  chmod 777 *.sh
+   73  nohup ./vbox-5.2.8_on_debian-9.5_install.sh&
+   74  cat nohup.out 
+   75  exit
+   76  cat nohup.out 
+   77  atop
+   78  ls -l
+   79  cd vms/
+   80  s
+   81  ls -l
+   82  find
+   83  cd S90_ECM_W7_NEWX_AP_DEV/
+   84  ls -l
+   85  ls -l
+   86  find
+   87  cat .W7_DEV_VS2010.vdi.EW89Js 
+   88  PuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTY
+   89  ls -l
+   90  ls -l
+   91  find
+   92  cd ..
+   93  cd ..
+   94  atop
+   95  cd ..
+   96  cd mnt/
+   97  cd volume_nyc1_01/
+   98  ls
+   99  cd s90/
+  100  ls
+  101  cd isos/
+  102  ls
+  103  atop
+  104  df -h
+  105  atop
+  106  ifconfig
+  107  cd
+  108  atop
+  109  exit
+  110  ls -l
+  111  cd do-virtualbox-installer/
+  112  ls -l
+  113  cat nohup.out 
+  114  tail -f nohup.out 
+  115  ls -l
+  116  ipconfig
+  117  ifconfig
+  118  vboxwebsrv 
+  119  exit
+  120  vboxwebsrv 
+  121  cd
+  122  nohup vboxwebsrv&
+  123  exit
+  124  ls -l
+  125  atop
+  126  ls -l
+  127  cat get.sh 
+  128  cp get.sh set.sh
+  129  vi set.sh 
+  130  cat *.sh
+  131  ls -l
+  132  mv *.sh do-virtualbox-installer/
+  133  cd do-virtualbox-installer/
+  134  cat get.sh 
+  135  cat *.sh
+  136  cat get.sh 
+  137  cat set.sh 
+  138  git status
+  139  . git
+  140  rm nohup.out 
+  141  . config.php 
+  142  . git-configure.sh 
+  143  git status
+  144  rm VBoxGuestAdditions_5.2.8.iso 
+  145  git status
+  146  ls -l
+  147  git add .
+  148  git status
+  149  git commit -m'update'
+  150  git push origin master
+  151  ls -l
+  152  git status
+  153  ls -l
+  154  nohup ./set.sh &
+  155  cat nohup.out 
+  156  ls -l
+  157  cat nohup.out 
+  158  cat set.sh 
+  159  atop
+  160  atop
+  161  cat nohup.out 
+  162  ls -l
+  163  cd ..
+  164  cd ..
+  165  atop
+  166  cd do
+  167  cd
+  168  cd do-virtualbox-installer/
+  169  cat nohup.out 
+  170  ls -l
+  171  atop
+  172  cd ..
+  173  ls -l
+  174  cd vms/
+  175  ls -l
+  176  ls -l
+  177  date
+  178  cd ..
+  179  cd ..
+  180  cd mnt/
+  181  cd volume_nyc1_01/s90/
+  182  ls
+  183  cd vms/
+  184  ls
+  185  ls -l
+  186  date
+  187  ls -la
+  188  find
+  189  cd /
+  190  cd
+  191  cd do-virtualbox-installer/
+  192  ls
+  193  cat nohup.out 
+  194  atop
+  195  exit
+  196  cd 
+  197  ls -l
+  198  sort 
+  199  cat local.sum | sort -k 1
+  200  cat local.sum | sort -k 2
+  201  vi local.sum 
+  202  vi remote.sum 
+  203  diff -u local.sum remote.sum 
+  204  cat remote.sum 
+  205  cat local.sum 
+  206  ls -l
+  207  cd do-virtualbox-installer/
+  208  ls -l
+  209  history > history.log
